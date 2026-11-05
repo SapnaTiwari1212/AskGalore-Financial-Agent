@@ -1,0 +1,11 @@
+entry_id,description,debit,credit,difference,missing_accounts,suspicious_accounts,decision,reasons
+JE-001,Accrue Q4 bonus pool,850000.0,850000.0,0.0,[],[],ACCEPT,All validation checks passed
+JE-002,Reclassify marketing spend wrongly booked to T&E,28500.0,25000.0,3500.0,[],[],REJECT,Debit-credit difference: 3500.0
+JE-003,FX revaluation of EUR cash balance to period-end rate,11200.0,11200.0,0.0,[],[],ACCEPT,All validation checks passed
+JE-004,Bad debt provision top-up,45000.0,45000.0,0.0,[],[],ACCEPT,All validation checks passed
+JE-005,Reclass conference travel from old code,18500.0,18500.0,0.0,['6315'],[],QUARANTINE,Missing COA accounts: ['6315']
+JE-006,Depreciation catch-up — Q4,215000.0,215000.0,0.0,[],[],ACCEPT,All validation checks passed
+JE-007,Deferred tax true-up,38000.0,38000.0,0.0,[],[],ACCEPT,All validation checks passed
+JE-008,Intercompany settlement — UK sub,320000.0,320000.0,0.0,[],['2170'],QUARANTINE,Same account on debit and credit sides: ['2170']
+JE-009,Accrue legal fees for ongoing litigation,75000.0,75000.0,0.0,[],[],ACCEPT,All validation checks passed
+JE-010,Reclass long-term debt current portion,200000.0,200000.0,0.0,[],[],ACCEPT,All validation checks passed
